@@ -1,0 +1,49 @@
+<!-- Embedding canvas into an HTML document
+ Drawing a line, circle, rectangle, arc onto the canvas
+ Filling the colour into shapes on canvas Filling linear and radial gradient inside canvas shapes
+ Setting the stroke colour and width on canvas. -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="700"
+      height="500"
+      style="border: 1px solid #000000"
+    ></canvas>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(100, 0);
+      ctx.lineTo(400, 400);
+      ctx.stroke();
+
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95, 50, 40, 0, 2 * 3.14);
+      ctx.stroke();
+
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+
+      // Create gradient
+      var grd = ctx.createLinearGradient(0, 0, 200, 0);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+
+      // Red rectangle
+      ctx.beginPath();
+      ctx.lineWidth = "6";
+      ctx.strokeStyle = "red";
+      ctx.rect(5, 5, 290, 140);
+      ctx.stroke();
+    </script>
+  </body>
+</html>
