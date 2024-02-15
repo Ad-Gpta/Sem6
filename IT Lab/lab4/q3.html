@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Web Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for better appearance */
+    body {
+      background-color: #f8f9fa;
+    }
+    .top-section {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .bottom-section {
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+<!-- Top Section -->
+<div class="top-section">
+  <h2>Top Section</h2>
+  <p>This is the top part of the page designed with Bootstrap.</p>
+</div>
+
+<!-- Bottom Section -->
+<div class="bottom-section">
+
+  <!-- First Bottom Part -->
+  <div class="section">
+    <h4>Bottom Part 1</h4>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Type something...">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+    </div>
+    <button type="button" class="btn btn-success">Regular Button</button>
+  </div>
+
+  <!-- Second Bottom Part -->
+  <div class="section">
+    <h4>Bottom Part 2</h4>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Type something...">
+      <div class="input-group-append">
+        <button class="btn btn-danger" type="button">Button</button>
+        <button class="btn btn-warning" type="button">Another</button>
+      </div>
+    </div>
+    <span class="badge badge-info ml-2">Badge</span>
+  </div>
+
+  <!-- Third Bottom Part -->
+  <div class="section">
+    <h4>Bottom Part 3</h4>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary">Left</button>
+      <button type="button" class="btn btn-secondary">Middle</button>
+      <button type="button" class="btn btn-secondary">Right</button>
+    </div>
+    <div class="input-group mt-3">
+      <input type="text" class="form-control" placeholder="Type something...">
+      <div class="input-group-append">
+        <button class="btn btn-dark" type="button">Submit</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

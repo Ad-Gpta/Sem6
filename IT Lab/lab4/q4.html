@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Timetable</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .table-container {
+      margin: 20px;
+    }
+    .carousel-item {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Table for Class Timetable -->
+<div class="container table-container">
+  <h2 class="text-center">Class Timetable</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>8:00 AM - 9:00 AM</td>
+        <td>Math</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>History</td>
+        <td>Physical Education</td>
+      </tr>
+      </tbody>
+      <tbody>
+      <tr>
+        <td>9:00 AM - 10:00 AM</td>
+        <td>Math</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>History</td>
+        <td>Physical Education</td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+</div>
+
+<!-- Carousel for Additional Schedules -->
+<div id="scheduleCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h2>Additional Schedule 1</h2>
+      <!-- Additional schedule content -->
+    </div>
+    <div class="carousel-item">
+      <h2>Additional Schedule 2</h2>
+      <!-- Additional schedule content -->
+    </div>
+    <!-- Add more carousel items as needed -->
+  </div>
+  <a class="carousel-control-prev" href="#scheduleCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#scheduleCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
